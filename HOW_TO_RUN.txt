@@ -1,0 +1,54 @@
+# PHANTOM - How to Run
+===============================================
+Market Maker Trap Detector | BNB Hack 2026
+===============================================
+
+## STEP 1 - Install Python
+Download from: https://python.org/downloads
+(Check "Add Python to PATH" during install)
+
+## STEP 2 - Get CMC API Key
+Go to: https://coinmarketcap.com/api
+Create free account and copy your API key
+
+## STEP 3 - Setup
+1. Download and extract phantom-skill.zip
+2. Create a file named exactly: .env
+3. Inside .env write:
+   CMC_API_KEY=your_api_key_here
+
+## STEP 4 - Install Dependencies
+Open CMD inside phantom-skill folder and run:
+
+   pip install requests numpy python-dotenv colorama tabulate
+
+## STEP 5 - Run PHANTOM
+
+Analyze BNB:
+   python main.py --token BNB
+
+Analyze any token:
+   python main.py --token ETH
+   python main.py --token CAKE
+   python main.py --token BTC
+
+Run with backtest:
+   python main.py --token BNB --backtest
+
+## WHAT YOU WILL SEE
+- Live token price and market data
+- Market Regime: BULL / BEAR / SIDEWAYS / CHAOS
+- Whale/MM manipulation detection
+- Crowd psychology zones
+- Final signal: BUY / SELL / HOLD
+- Entry price, Stop Loss, Take Profit levels
+- Backtest results with win rate
+
+## SUPPORTED TOKENS
+Any token listed on CoinMarketCap
+Examples: BNB, ETH, BTC, CAKE, DOGE, SHIB, etc.
+
+===============================================
+Built for BNB Hack 2026 | Track 2 Strategy Skills
+Powered by CoinMarketCap AI Agent Hub
+===============================================
